@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: pymt
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: c734aad964f0bfc49b113be47963b52bb2a157ef7ee565249df8e993dda7c54a
+  sha256: 1362acb01e468665dc38df84ff050cea222610981e196eeeb745c17de28d9bb1
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
   noarch: python
 
