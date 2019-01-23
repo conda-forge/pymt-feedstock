@@ -6,10 +6,11 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: 2ae22da10a04efb5cc223013f2d48e6534ae87aac4e91365424e276bbf1813a3
+  sha256: afaa89951ebf3e41e397321deaeef31676ea038d38cb3a352d9af1db3489e01a
 
 build:
   number: 0
+  skip: True  # [py2k]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
 
 requirements:
@@ -31,14 +32,6 @@ requirements:
     - model_metadata
     - scripting
     - landlab
-
-test:
-  requires:
-    - pytest
-  imports:
-    - pymt
-  commands:
-    - pytest --pyargs pymt --doctest-modules -o doctest_optionflags="NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL ALLOW_UNICODE"
 
 about:
   home: https://github.com/csdms/pymt
