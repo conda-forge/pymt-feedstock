@@ -33,7 +33,7 @@ requirements:
     - scripting
     - landlab
 
-tests:
+test:
   imports:
     - pymt
 
