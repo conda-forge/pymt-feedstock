@@ -33,6 +33,10 @@ requirements:
     - scripting
     - landlab
 
+tests:
+  imports:
+    - pymt
+
 about:
   home: https://github.com/csdms/pymt
   license: MIT
