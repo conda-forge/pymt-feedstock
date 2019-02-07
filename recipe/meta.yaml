@@ -1,4 +1,4 @@
-{% set version = "0.2.6" %}
+{% set version = "0.2.8" %}
 
 package:
   name: pymt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: 739ef2f66d3883b5b2010cb1fba8400e7bca2cf2d83cb1d7e1235d116ea12101
+  sha256: c7caad9317046081088bd18e9c4feddae79e6a691e6501ae5e2afd1376b9956e
 
 build:
   number: 0
@@ -18,7 +18,7 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - python >=3
     - numpy
     - scipy
     - matplotlib
@@ -26,7 +26,6 @@ requirements:
     - shapely
     - netcdf4
     - pyyaml
-    - esmpy
     - cfunits
     - jinja2
     - model_metadata
