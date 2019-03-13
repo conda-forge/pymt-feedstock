@@ -10,8 +10,8 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  skip: True  # [py2k]
 
 requirements:
   host:
@@ -32,11 +32,14 @@ requirements:
     - scripting
     - landlab
     - deprecated
+    - esmpy  # [not win]
+    - pymt_hydrotrend  # [not win]
+    - pymt_cem  # [not win]
+    - pymt_permamodel
 
 test:
   requires:
     - pytest
-    - esmpy  # [not win]
   imports:
     - pymt
   commands:
