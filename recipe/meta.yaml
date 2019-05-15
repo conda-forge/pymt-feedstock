@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: 487ee8b9036e0dc9a325de688bca35f7492262c68e5b3b64f36a563e457b8f88
+  sha256: 0ce847957c53dbcb14bec83085db41df7cbc0b6882a2c30d98f23108fc55ead7
 
 build:
   number: 0
