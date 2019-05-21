@@ -1,4 +1,4 @@
-{% set version = "v1.1.0b0" %}
+{% set version = "1.1.0b0" %}
 
 package:
   name: pymt
