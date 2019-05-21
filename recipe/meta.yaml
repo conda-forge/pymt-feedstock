@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.1.0b0" %}
 
 package:
   name: pymt
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: 0ce847957c53dbcb14bec83085db41df7cbc0b6882a2c30d98f23108fc55ead7
+  sha256: c1f6540873a2b13ba88ef1793e6822e99746d656c7484330fd686074fb1aa86d
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
   skip: True  # [py2k]
 
@@ -36,6 +36,7 @@ requirements:
     - pymt_hydrotrend  # [not win]
     - pymt_cem  # [not win]
     - pymt_permamodel
+    - pymt_landlab
 
 test:
   requires:
