@@ -33,9 +33,10 @@ requirements:
     - landlab
     - deprecated
     - esmpy  # [not win]
-    - pymt_hydrotrend  # [not win]
     - pymt_cem  # [not win]
+    - pymt_hydrotrend  # [not win]
     - pymt_permamodel
+    - pymt_sedflux  # [not win]
 
 test:
   requires:
