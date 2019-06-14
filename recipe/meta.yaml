@@ -9,7 +9,7 @@ source:
   sha256: c1f6540873a2b13ba88ef1793e6822e99746d656c7484330fd686074fb1aa86d
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
   skip: True  # [py2k]
 
@@ -33,10 +33,11 @@ requirements:
     - landlab
     - deprecated
     - esmpy  # [not win]
-    - pymt_hydrotrend  # [not win]
     - pymt_cem  # [not win]
-    - pymt_permamodel
+    - pymt_hydrotrend  # [not win]
     - pymt_landlab
+    - pymt_permamodel
+    - pymt_sedflux  # [not win]
 
 test:
   requires:
