@@ -16,12 +16,12 @@ build:
 requirements:
   build:
     - {{ compiler("c") }}
-
   host:
     - python
     - pip
     - numpy
     - cython
+    - udunits2
   run:
     - python
     - numpy
@@ -36,6 +36,7 @@ requirements:
     - scripting
     - landlab
     - deprecated
+    - udunits2
     - esmpy  # [not win]
     - pymt_cem  # [not win]
     - pymt_hydrotrend  # [not win]
