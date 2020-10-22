@@ -5,9 +5,13 @@ Home: https://github.com/csdms/pymt
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymt-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package that provides services for coupling BMI components
+
+Development: https://github.com/csdms/pymt
+
+Documentation: https://pymt.readthedocs.io
 
 PyMT is an Open Source Python package, developed by the Community
 Surface Dynamics Modeling System, that provides the necessary
