@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 
 package:
   name: pymt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: 6540ec0ae92288d737e376d589507995fde6d4e9602985ff57a5175df02059d6
+  sha256: ecb9b9057686310d657aa9d780a3b3399c13038aff61104a1bce6a45b79fa25d
 
 build:
   number: 0
