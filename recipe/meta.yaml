@@ -37,7 +37,7 @@ requirements:
     - landlab
     - deprecated
     - gimli.units
-    - esmpy  # [not win]
+    - esmpy
     - pymt_cem  # [not win]
     - pymt_child
     - pymt_hydrotrend
