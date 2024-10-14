@@ -38,7 +38,6 @@ requirements:
     - pyyaml
     - jinja2
     - model_metadata
-    - scripting
     - landlab
     - deprecated
     - gimli.units
