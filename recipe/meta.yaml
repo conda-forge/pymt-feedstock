@@ -62,7 +62,7 @@ about:
   home: https://github.com/csdms/pymt
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.rst
   summary: Python package that provides services for coupling BMI components
   description: |
     PyMT is an Open Source Python package, developed by the Community
