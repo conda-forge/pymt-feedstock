@@ -26,7 +26,7 @@ requirements:
     - pip
     - numpy
     - cython
-    - gimli.units
+    - gimli.units >=0.3.3
   run:
     - python
     - numpy
@@ -40,7 +40,7 @@ requirements:
     - model_metadata
     - landlab
     - deprecated
-    - gimli.units
+    - gimli.units >=0.3.3
     - esmpy
     - pymt_cem  # [not win]
     - pymt_child
