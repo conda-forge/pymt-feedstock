@@ -42,11 +42,11 @@ requirements:
     - deprecated
     - gimli.units >=0.3.3
     - esmpy
-    - pymt_cem  # [not win]
-    - pymt_child
-    - pymt_hydrotrend
-    - pymt_permamodel
-    - pymt_sedflux  # [not win]
+    # - pymt_cem  # [not win]
+    # - pymt_child
+    # - pymt_hydrotrend
+    # - pymt_permamodel
+    # - pymt_sedflux  # [not win]
 
 test:
   requires:
