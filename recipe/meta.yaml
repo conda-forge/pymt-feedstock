@@ -37,12 +37,12 @@ requirements:
     - netcdf4
     - pyyaml
     - jinja2
-    - model_metadata
+    - model_metadata <0.8
     - landlab
     - deprecated
     - gimli.units >=0.3.3
     - esmpy
-    # - pymt_cem  # [not win]
+    - pymt_cem  # [not win]
     # - pymt_child
     # - pymt_hydrotrend
     # - pymt_permamodel
