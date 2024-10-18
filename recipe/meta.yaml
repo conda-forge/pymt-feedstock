@@ -1,4 +1,4 @@
-{% set version = "1.3.1" %}
+{% set version = "1.3.2" %}
 
 package:
   name: pymt
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/csdms/pymt/archive/v{{ version }}.tar.gz
-  sha256: 366e245e5378a2f02c18deca43fcad620d1b76ef99da40bc6e08dd94dc4cafc0
+  sha256: 0137bccb5a6070dc99f3914bd85eea603cbe96ec9ba2cf32cfab99066f0f7ddb
 
 build:
-  number: 2
-  skip: true  # [py2k]
+  number: 0
+  skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -20,12 +20,13 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler("c") }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
     - numpy
     - cython
-    - gimli.units
+    - gimli.units >=0.3.3
   run:
     - python
     - numpy
@@ -37,16 +38,15 @@ requirements:
     - pyyaml
     - jinja2
     - model_metadata
-    - scripting
     - landlab
     - deprecated
-    - gimli.units
+    - gimli.units >=0.3.3
     - esmpy
-    - pymt_cem  # [not win]
-    - pymt_child
-    - pymt_hydrotrend
-    - pymt_permamodel
-    - pymt_sedflux  # [not win]
+    # - pymt_cem  # [not win]
+    # - pymt_child
+    # - pymt_hydrotrend
+    # - pymt_permamodel
+    # - pymt_sedflux  # [not win]
 
 test:
   requires:
@@ -61,7 +61,7 @@ about:
   home: https://github.com/csdms/pymt
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.rst
   summary: Python package that provides services for coupling BMI components
   description: |
     PyMT is an Open Source Python package, developed by the Community
