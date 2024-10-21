@@ -9,7 +9,7 @@ source:
   sha256: 0137bccb5a6070dc99f3914bd85eea603cbe96ec9ba2cf32cfab99066f0f7ddb
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -24,6 +24,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - numpy
     - cython
     - gimli.units >=0.3.3
